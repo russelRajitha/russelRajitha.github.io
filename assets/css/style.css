@@ -233,6 +233,11 @@ h6 {
   background-repeat: no-repeat;
   background-color: #000000;
 }
+@media (max-width: 414px) {
+  #hero {
+    background-size: cover;
+  }
+}
 
 #hero:before {
   content: "";
