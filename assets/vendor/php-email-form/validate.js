@@ -25,7 +25,7 @@
       thisForm.querySelector('.error-message').classList.remove('d-block');
       thisForm.querySelector('.sent-message').classList.remove('d-block');
 
-      let formData = new FormData( thisForm );
+      let formData = new FormData(event.target);
 
       if ( recaptcha ) {
         if(typeof grecaptcha !== "undefined" ) {
@@ -60,12 +60,8 @@
     })
     .then(data => {
       thisForm.querySelector('.loading').classList.remove('d-block');
-      if (data.trim() == 'OK') {
-        thisForm.querySelector('.sent-message').classList.add('d-block');
-        thisForm.reset(); 
-      } else {
-        throw new Error(data ? data : 'Form submission failed and no error message returned from: ' + action); 
-      }
+      thisForm.querySelector('.sent-message').classList.add('d-block');
+      thisForm.reset();
     })
     .catch((error) => {
       displayError(thisForm, error);
