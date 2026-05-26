@@ -34,26 +34,54 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Russel Rajitha",
-      "url": "https://russelrajitha.github.io/",
-      "image": "https://russelrajitha.github.io/assets/img/profile-img.jpg",
-      "jobTitle": "Technical Lead – Mobile",
-      "description": "Highly skilled mobile app developer with expertise in React-Native, Flutter, Android, and iOS.",
-      "email": "russelrajitha@gmail.com",
-      "telephone": "+94716645756",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Colombo",
-        "addressCountry": "LK"
-      },
-      "knowsAbout": ["React Native", "Flutter", "Android", "iOS", "Mobile App Development", "Software Architecture", "Backend Engineering"],
-      "sameAs": [
-        "https://www.linkedin.com/in/russel-rajitha-a5293364",
-        "https://twitter.com/russelrajitha",
-        "https://www.facebook.com/rajitha.russel",
-        "https://www.instagram.com/rajitharussel",
-        "https://github.com/russelrajitha"
+      "@graph": [
+        {
+          "@type": "ProfilePage",
+          "@id": "https://russelrajitha.github.io/#webpage",
+          "url": "https://russelrajitha.github.io/",
+          "name": "React-Native, Flutter, Android, iOS, Mobile App Developer | Russel Rajitha",
+          "description": "Portfolio of Russel Rajitha, a highly skilled mobile app developer with expertise in React-Native, Flutter, Android, and iOS.",
+          "datePublished": "2023-01-01",
+          "dateModified": "2026-05-26",
+          "isPartOf": { "@id": "https://russelrajitha.github.io/#website" },
+          "mainEntity": { "@id": "https://russelrajitha.github.io/#person" }
+        },
+        {
+          "@type": "WebSite",
+          "@id": "https://russelrajitha.github.io/#website",
+          "url": "https://russelrajitha.github.io/",
+          "name": "Russel Rajitha",
+          "description": "Portfolio of Russel Rajitha — Mobile App Developer"
+        },
+        {
+          "@type": "Person",
+          "@id": "https://russelrajitha.github.io/#person",
+          "name": "Russel Rajitha",
+          "url": "https://russelrajitha.github.io/",
+          "image": {
+            "@type": "ImageObject",
+            "url": "https://russelrajitha.github.io/assets/img/profile-img.jpg",
+            "width": 600,
+            "height": 600
+          },
+          "jobTitle": "Technical Lead – Mobile",
+          "description": "Highly skilled mobile app developer with expertise in React-Native, Flutter, Android, and iOS.",
+          "email": "russelrajitha@gmail.com",
+          "telephone": "+94716645756",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Colombo",
+            "addressCountry": "LK"
+          },
+          "knowsAbout": ["React Native", "Flutter", "Android", "iOS", "Mobile App Development", "Software Architecture", "Backend Engineering"],
+          "sameAs": [
+            "https://www.linkedin.com/in/russel-rajitha-a5293364",
+            "https://twitter.com/russelrajitha",
+            "https://www.facebook.com/rajitha.russel",
+            "https://www.instagram.com/rajitharussel",
+            "https://github.com/russelrajitha"
+          ]
+        }
       ]
     }
     </script>
